@@ -1,0 +1,42 @@
+.test-head_line{
+	min-height: 90px;
+	background-color: $dark_gray;
+}
+.test-logo{
+	width: 105px;
+	display: block;
+	margin-top: 27px;
+	@media only screen and (max-width : 992px){
+		padding-left: 20px;
+		margin: 27px auto 0px auto;
+	}
+	@media only screen and (max-width : 768px){
+		margin: 27px auto;
+		padding-left: 0px;
+	}
+}
+/* menu */
+.test-menu{
+	font-weight: 300;
+	font-size: 16px;
+	float: right;
+	line-height: 60px;
+	@media only screen and (max-width : 992px){
+		margin-right: 20px;
+	}
+	@media only screen and (max-width : 768px){
+		float: none;
+		text-align: center;
+		margin-right: 0px;
+	}
+	& li{
+		display: inline-block;
+		margin-right: 43px;
+		& a{
+			color: $menu_color;
+			&:hover{
+				text-decoration: underline;
+			}
+		}		
+	}
+}
