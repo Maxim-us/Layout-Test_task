@@ -1,0 +1,80 @@
+.test-our_services{
+	width: 100%;
+	@include box-sizing;	
+	& h2{
+		font-size: 48px;
+		display: block;
+		text-align: center;
+		font-weight: 300;
+		color: $dark_gray;
+		&::after{
+			width: 220px;
+			height: 2px;
+			content: "";
+			position: absolute;	
+			margin: 35px 0px 0px 20px;
+			background-image: url(../img/layer.png);
+			background-repeat: no-repeat;
+		}
+		&::before{		
+			width: 220px;
+			height: 2px;
+			content: "";
+			position: absolute;	
+			margin: 35px 0px 0px -240px;			
+			background-image: url(../img/layer.png);
+			background-repeat: no-repeat;
+		}
+	}
+}
+.test-item_service{
+	display: block;
+	text-align: center;
+	& > a{
+		width: 120px;
+		display: block;
+		margin: 0px auto;
+	}
+	& .icons{
+		@include transition(0.3s);	
+		color: #2c2929;		
+		&:hover{
+			@include transition(0.3s);	
+			color: $dark_blue;
+		}
+	}
+	& h3{
+		font-size: 22px;
+		font-weight: 400;
+		text-align: center;
+		color: $dark_blue;
+		text-transform: uppercase;
+		display: block;
+		margin-top: -5px;
+	}
+	& p{		
+		font-weight: 400;
+		@media only screen and (max-width : 768px){				
+			max-width: 350px;
+			display: block;
+			padding: 0px 20px;
+			margin: 0px auto;
+		}	
+	}
+	& > span{
+		display: inline-block;
+		margin: 30px 0px;
+		& a{
+			font-size: 14px;
+			color: #ffffff;
+			background-color: $dark_blue;
+			font-weight: 300;
+			padding: 10px 33px;
+			@include transition(0.3s);		
+			&:hover{
+				background-color: $light_blue;				
+				@include transition(0.3s);
+			}
+		}
+	}
+}

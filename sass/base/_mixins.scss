@@ -17,3 +17,11 @@
 	-moz-border-radius: $num;
 	-webkit-border-radius: $num;
 }
+
+@mixin transition($tr){
+	transition: $tr;
+	transition-duration: $tr;
+	-webkit-transition-duration: $tr;
+	-o-transition-duration: $tr;
+	-moz-transition-duration: $tr;
+}

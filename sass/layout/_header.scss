@@ -130,11 +130,10 @@
 		float: left;	
 		margin-top: 20px;	
 		@media only screen and (max-width : 768px){				
-			width: 170px;
+			width: 185px;
 			float: none;
 			display: block;			
 			margin: 30px auto;
-
 		}	
 		& a{		
 			font-size: 18px;
@@ -142,6 +141,11 @@
 			padding: 6px 45px;
 			background-color: $light_blue;
 			font-weight: 300;
+			@include transition(0.3s);		
+			&:hover{
+				background-color: $dark_blue;				
+				@include transition(0.3s);
+			}
 		}
 	}
 }
