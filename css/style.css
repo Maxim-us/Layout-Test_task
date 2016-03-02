@@ -1,0 +1,24 @@
+a {
+  text-decoration: none; }
+
+/* centering blocks */
+.conteiner-horisontal {
+  padding: 0px;
+  width: 100%;
+  position: relative;
+  float: left; }
+
+.horisontal-line {
+  max-width: 1920px;
+  margin: 0px auto;
+  position: relative;
+  padding: 0px; }
+
+.conteiner-center {
+  width: 100%;
+  max-width: 940px;
+  margin: 0px auto;
+  position: relative;
+  padding: 0px; }
+
+/*# sourceMappingURL=style.css.map */
