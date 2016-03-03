@@ -246,13 +246,13 @@ a {
         margin: 0px auto; } }
   .test-item_service > span {
     display: inline-block;
-    margin: 30px 0px; }
+    margin: 30px 0px 35px 0px; }
     .test-item_service > span a {
       font-size: 14px;
       color: #ffffff;
       background-color: #3674ba;
       font-weight: 300;
-      padding: 10px 33px;
+      padding: 5px 33px;
       transition: 0.3s;
       transition-duration: 0.3s;
       -webkit-transition-duration: 0.3s;
@@ -265,5 +265,146 @@ a {
         -webkit-transition-duration: 0.3s;
         -o-transition-duration: 0.3s;
         -moz-transition-duration: 0.3s; }
+
+.test-about_background {
+  background-color: #d1d1d1; }
+
+.test-about_wrap {
+  width: 100%;
+  position: relative;
+  display: block;
+  min-height: 616px; }
+  .test-about_wrap .test-about_h2 {
+    width: 100%; }
+    .test-about_wrap .test-about_h2 h2 {
+      font-size: 48px;
+      display: block;
+      text-align: center;
+      font-weight: 300;
+      padding-top: 40px;
+      color: #5b6169; }
+      .test-about_wrap .test-about_h2 h2::after {
+        width: 220px;
+        height: 2px;
+        content: "";
+        position: absolute;
+        margin: 35px 0px 0px 20px;
+        background-image: url(../img/layer.png);
+        background-repeat: no-repeat; }
+      .test-about_wrap .test-about_h2 h2::before {
+        width: 220px;
+        height: 2px;
+        content: "";
+        position: absolute;
+        margin: 35px 0px 0px -240px;
+        background-image: url(../img/layer.png);
+        background-repeat: no-repeat; }
+
+.test-about_info {
+  width: 100%;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  @media only screen and (max-width: 992px) {
+    .test-about_info {
+      padding-left: 20px; } }
+  @media only screen and (max-width: 768px) {
+    .test-about_info {
+      padding: 0px 20px; } }
+  .test-about_info h3 {
+    font-size: 36px;
+    color: #5b6169;
+    font-weight: 400;
+    margin-top: -18px; }
+  .test-about_info p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -20px;
+    color: #5b6169;
+    text-align: justify;
+    font-family: arial; }
+  .test-about_info > span {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #3674ba;
+    display: block;
+    margin: 20px 0px 10px 0px; }
+  .test-about_info .test_about-level {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    background-color: #828181; }
+    .test-about_info .test_about-level .test_about-level-one > span, .test-about_info .test_about-level .test_about-level-two > span, .test-about_info .test_about-level .test_about-level-three > span, .test-about_info .test_about-level .test_about-level-four > span {
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      display: block;
+      padding: 4px 10px; }
+    .test-about_info .test_about-level .test_about-level-one {
+      width: 92%;
+      height: 100%;
+      display: block;
+      background-color: #3674ba; }
+    .test-about_info .test_about-level .test_about-level-two {
+      width: 96%;
+      height: 100%;
+      display: block;
+      background-color: #3674ba; }
+    .test-about_info .test_about-level .test_about-level-three {
+      width: 86%;
+      height: 100%;
+      display: block;
+      background-color: #3674ba; }
+    .test-about_info .test_about-level .test_about-level-four {
+      width: 82%;
+      height: 100%;
+      display: block;
+      background-color: #3674ba; }
+
+.test-about_contacts {
+  width: 100%;
+  display: block; }
+  .test-about_contacts .test-about_map {
+    width: 100%;
+    height: 158px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 10px; }
+  .test-about_contacts .test-about_form {
+    width: 100%;
+    display: block; }
+    .test-about_contacts .test-about_form .form-group {
+      width: 100%;
+      position: relative;
+      display: block; }
+    .test-about_contacts .test-about_form input {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 10px;
+      border: none;
+      background-color: #f1f1f1; }
+    .test-about_contacts .test-about_form textarea {
+      width: 100%;
+      height: 110px;
+      border: none;
+      background-color: #f1f1f1; }
+    .test-about_contacts .test-about_form button {
+      position: absolute;
+      float: right;
+      width: 92px;
+      height: 30px;
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 80px;
+      color: #ffffff;
+      background-color: #3674ba;
+      border: none;
+      right: 0px; }
 
 /*# sourceMappingURL=style.css.map */
