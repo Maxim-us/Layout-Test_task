@@ -14,10 +14,10 @@ $(document).ready(function(){
 	});
 	
 	
-		if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {			
-			
-			$(".test-our_services > h2").befote(".class_before_safari");
-			
-			
+	if(navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1){					
+		$(".test-our_services_all").hide();
+		$(".test-our_services_safari").show();
+		$(".test-about_all").hide();
+		$(".test-about_safari").show();			
 	}
 })

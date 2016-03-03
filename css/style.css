@@ -188,39 +188,61 @@ a {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
-  .test-our_services h2 {
-    font-size: 48px;
-    display: block;
-    text-align: center;
-    font-weight: 300;
-    color: #5b6169; }
-    .test-our_services h2::after {
-      width: 220px;
-      height: 2px;
-      content: "";
-      position: absolute;
-      margin: 35px 0px 0px 20px;
-      background-image: url(../img/layer.png);
-      background-repeat: no-repeat; }
-    .test-our_services h2::before {
-      width: 220px;
-      height: 2px;
-      content: "";
-      position: absolute;
-      margin: 35px 0px 0px -240px;
-      background-image: url(../img/layer.png);
-      background-repeat: no-repeat; }
+
+.test-our_services_all {
+  font-size: 48px;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  color: #5b6169; }
+  .test-our_services_all::after {
+    width: 220px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    margin: 35px 0px 0px 20px;
+    background-image: url(../img/layer.png);
+    background-repeat: no-repeat; }
+  .test-our_services_all::before {
+    width: 220px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    margin: 35px 0px 0px -240px;
+    background-image: url(../img/layer.png);
+    background-repeat: no-repeat; }
 
 /* class safari */
-.class_before_safari {
-  width: 220px;
-  height: 2px;
-  content: "";
-  position: absolute;
-  margin: 35px 0px 0px 65px;
-  /* -240 */
-  background-image: url(../img/layer.png);
-  background-repeat: no-repeat; }
+.test-our_services_safari {
+  font-size: 48px;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  color: #5b6169;
+  display: none; }
+  .test-our_services_safari::after {
+    width: 220px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    margin: 35px 0px 0px 20px;
+    background-image: url(../img/layer.png);
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 1122px) {
+      .test-our_services_safari::after {
+        display: none; } }
+  .test-our_services_safari::before {
+    width: 220px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    margin: 35px 0px 0px 60px;
+    background-image: url(../img/layer.png);
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 1122px) {
+      .test-our_services_safari::before {
+        display: none; } }
 
 .test-item_service {
   display: block;
@@ -294,29 +316,6 @@ a {
   min-height: 616px; }
   .test-about_wrap .test-about_h2 {
     width: 100%; }
-    .test-about_wrap .test-about_h2 h2 {
-      font-size: 48px;
-      display: block;
-      text-align: center;
-      font-weight: 300;
-      padding-top: 40px;
-      color: #5b6169; }
-      .test-about_wrap .test-about_h2 h2::after {
-        width: 220px;
-        height: 2px;
-        content: "";
-        position: absolute;
-        margin: 35px 0px 0px 20px;
-        background-image: url(../img/layer.png);
-        background-repeat: no-repeat; }
-      .test-about_wrap .test-about_h2 h2::before {
-        width: 220px;
-        height: 2px;
-        content: "";
-        position: absolute;
-        margin: 35px 0px 0px -240px;
-        background-image: url(../img/layer.png);
-        background-repeat: no-repeat; }
   .test-about_wrap .test-about_signature {
     width: 100%;
     display: block;
@@ -337,6 +336,63 @@ a {
       font-weight: 400;
       color: #ffffff;
       text-transform: uppercase; }
+
+.test-about_all {
+  font-size: 48px;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 40px;
+  color: #5b6169; }
+  .test-about_all::after {
+    width: 220px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    margin: 35px 0px 0px 20px;
+    background-image: url(../img/layer.png);
+    background-repeat: no-repeat; }
+  .test-about_all::before {
+    width: 220px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    margin: 35px 0px 0px -240px;
+    background-image: url(../img/layer.png);
+    background-repeat: no-repeat; }
+
+/* class safari */
+.test-about_safari {
+  font-size: 48px;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 40px;
+  color: #5b6169;
+  display: none; }
+  .test-about_safari::after {
+    width: 220px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    margin: 35px 0px 0px 20px;
+    background-image: url(../img/layer.png);
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 1122px) {
+      .test-about_safari::after {
+        display: none; } }
+  .test-about_safari::before {
+    width: 220px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    margin: 35px 0px 0px 140px;
+    background-image: url(../img/layer.png);
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 1122px) {
+      .test-about_safari::before {
+        display: none; } }
 
 .test-about_info {
   width: 100%;

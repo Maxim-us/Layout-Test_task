@@ -1,42 +1,67 @@
 .test-our_services{
 	width: 100%;
-	@include box-sizing;	
-	& h2{
-		font-size: 48px;
-		display: block;
-		text-align: center;
-		font-weight: 300;
-		color: $dark_gray;
-		&::after{
-			width: 220px;
-			height: 2px;
-			content: "";
-			position: absolute;	
-			margin: 35px 0px 0px 20px;
-			background-image: url(../img/layer.png);
-			background-repeat: no-repeat;
-		}
-		&::before{		
-			width: 220px;
-			height: 2px;
-			content: "";
-			position: absolute;	
-			margin: 35px 0px 0px -240px;		
-			background-image: url(../img/layer.png);
-			background-repeat: no-repeat;
-		}
+	@include box-sizing;		
+}
+.test-our_services_all{
+	font-size: 48px;
+	display: block;
+	text-align: center;
+	font-weight: 300;
+	color: $dark_gray;
+	&::after{
+		width: 220px;
+		height: 2px;
+		content: "";
+		position: absolute;	
+		margin: 35px 0px 0px 20px;
+		background-image: url(../img/layer.png);
+		background-repeat: no-repeat;
+	}
+	&::before{		
+		width: 220px;
+		height: 2px;
+		content: "";
+		position: absolute;	
+		margin: 35px 0px 0px -240px;		
+		background-image: url(../img/layer.png);
+		background-repeat: no-repeat;
 	}
 }
 
+
 /* class safari */
-.class_before_safari{
-	width: 220px;
-	height: 2px;
-	content: "";
-	position: absolute;	
-	margin: 35px 0px 0px 65px;	/* -240 */		
-	background-image: url(../img/layer.png);
-	background-repeat: no-repeat;
+.test-our_services_safari{
+	font-size: 48px;
+	display: block;
+	text-align: center;
+	font-weight: 300;
+	color: $dark_gray;
+	display: none;	
+	&::after{
+		width: 220px;
+		height: 2px;
+		content: "";
+		position: absolute;	
+		margin: 35px 0px 0px 20px;
+		background-image: url(../img/layer.png);
+		background-repeat: no-repeat;
+		@media only screen and (max-width : 1122px){
+			display: none;
+		}	
+	}
+	&::before{		
+		width: 220px;
+		height: 2px;
+		content: "";
+		position: absolute;	
+		overflow: hidden;
+		margin: 35px 0px 0px 60px;	
+		background-image: url(../img/layer.png);
+		background-repeat: no-repeat;
+		@media only screen and (max-width : 1122px){
+			display: none;
+		}		
+	}
 }
 
 .test-item_service{

@@ -8,33 +8,7 @@
 	display: block;
 	min-height: 616px;
 	& .test-about_h2{
-		width: 100%;	
-		& h2{
-			font-size: 48px;
-			display: block;
-			text-align: center;
-			font-weight: 300;
-			padding-top: 40px;
-			color: $dark_gray;
-			&::after{
-				width: 220px;
-				height: 2px;
-				content: "";
-				position: absolute;	
-				margin: 35px 0px 0px 20px;
-				background-image: url(../img/layer.png);
-				background-repeat: no-repeat;
-			}
-			&::before{		
-				width: 220px;
-				height: 2px;
-				content: "";
-				position: absolute;	
-				margin: 35px 0px 0px -240px;			
-				background-image: url(../img/layer.png);
-				background-repeat: no-repeat;
-			}
-		}
+		width: 100%;			
 	}
 	& .test-about_signature{
 		width: 100%;
@@ -57,6 +31,78 @@
 		}
 	}
 }
+
+.test-about_all{
+	font-size: 48px;
+	display: block;
+	text-align: center;
+	font-weight: 300;
+	padding-top: 40px;
+	color: $dark_gray;
+	&::after{
+		width: 220px;
+		height: 2px;
+		content: "";
+		position: absolute;	
+		margin: 35px 0px 0px 20px;
+		background-image: url(../img/layer.png);
+		background-repeat: no-repeat;
+	}
+	&::before{		
+		width: 220px;
+		height: 2px;
+		content: "";
+		position: absolute;	
+		margin: 35px 0px 0px -240px;			
+		background-image: url(../img/layer.png);
+		background-repeat: no-repeat;
+	}
+}
+
+/* class safari */
+.test-about_safari{
+	font-size: 48px;
+	display: block;
+	text-align: center;
+	font-weight: 300;
+	padding-top: 40px;
+	color: $dark_gray;
+	display: none;
+	&::after{
+		width: 220px;
+		height: 2px;
+		content: "";
+		position: absolute;	
+		margin: 35px 0px 0px 20px;
+		background-image: url(../img/layer.png);
+		background-repeat: no-repeat;
+		@media only screen and (max-width : 1122px){
+			display: none;
+		}	
+	}
+	&::before{		
+		width: 220px;
+		height: 2px;
+		content: "";
+		position: absolute;	
+		overflow: hidden;
+		margin: 35px 0px 0px 140px;	
+		background-image: url(../img/layer.png);
+		background-repeat: no-repeat;
+		@media only screen and (max-width : 1122px){
+			display: none;
+		}		
+	}
+}
+
+
+
+
+
+
+
+
+
 .test-about_info{
 	width: 100%;
 	display: block;
