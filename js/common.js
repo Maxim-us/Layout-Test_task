@@ -12,4 +12,12 @@ $(document).ready(function(){
 		mouseDrag : false,
 		dots : true
 	});
+	
+	
+		if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {			
+			
+			$(".test-our_services > h2").befote(".class_before_safari");
+			
+			
+	}
 })

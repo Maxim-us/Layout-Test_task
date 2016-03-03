@@ -15,6 +15,7 @@
 	font-family: 'icons_services';
 	font-size: 120px;
 	display: block;
+	margin-left: -25px;
 	font-style: normal;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;

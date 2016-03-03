@@ -29,9 +29,14 @@
 		text-align: center;
 		margin-right: 0px;
 	}
+	& li:not(:last-child){
+		margin-right: 43px;
+	}
 	& li{
 		display: inline-block;
-		margin-right: 43px;
+		@media only screen and (max-width : 768px){
+			margin-right: 43px;
+		}		
 		& a{
 			color: $menu_color;
 			&:hover{

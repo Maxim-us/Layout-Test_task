@@ -25,3 +25,9 @@
 	-o-transition-duration: $tr;
 	-moz-transition-duration: $tr;
 }
+
+@mixin box-sdadow($n1, $n2, $n3, $n4, $opac){
+	box-shadow: $n1 $n2 $n3 $n4 rgba(0,0,0,$opac);
+	-moz-box-shadow: $n1 $n2 $n3 $n4 rgba(0,0,0,$opac);
+	-webkit-box-shadow: $n1 $n2 $n3 $n4 rgba(0,0,0,$opac);
+}

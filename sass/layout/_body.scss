@@ -21,17 +21,29 @@
 			height: 2px;
 			content: "";
 			position: absolute;	
-			margin: 35px 0px 0px -240px;			
+			margin: 35px 0px 0px -240px;		
 			background-image: url(../img/layer.png);
 			background-repeat: no-repeat;
 		}
 	}
 }
+
+/* class safari */
+.class_before_safari{
+	width: 220px;
+	height: 2px;
+	content: "";
+	position: absolute;	
+	margin: 35px 0px 0px 65px;	/* -240 */		
+	background-image: url(../img/layer.png);
+	background-repeat: no-repeat;
+}
+
 .test-item_service{
 	display: block;
 	text-align: center;
 	& > a{
-		width: 120px;
+		width: 140px;
 		display: block;
 		margin: 0px auto;
 	}
