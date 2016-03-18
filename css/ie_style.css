@@ -1,22 +1,3 @@
-.col-md-2{
-	width: 20%;
-	float: left;
-}
-.col-md-10{
-	width: 80%;
-	float: left;
-}
-.test-menu li{
-	margin-left: 40px;
-}
-.col-md-6{
-	width: 50%;
-	float: left;
-}
-.col-md-4{
-	width: 33.3%;
-	float: left;
-}
 .owl-carousel{
 	height: 400px;
 	overflow: hidden;
@@ -57,4 +38,7 @@
 	background-image: url(../img/icon_c.png);
 	background-repeat: no-repeat;
 	background-position: 0px -145px;
+}
+.test-menu li{
+	margin-right: 40px;
 }
